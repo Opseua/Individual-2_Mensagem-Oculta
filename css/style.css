@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    background-color: #1F2021;
+    color: white;
+    
+}
+
+.blo_header {
+    margin: 0;
+    background-color: #121212;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.blo_footer {
+    margin: 0;
+    background-color: #121212;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.blo_body {
+    margin: 30px;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.blo_enc_dec {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+textarea {
+    width: 500px;
+    height: 120px;
+    border-radius: 10px;
+    white-space: pre;
+}
+
+
+
+input[type='radio'] {
+    height: 20px;
+    width: 20px;
+    vertical-align: text-bottom;
+    align-items: center;
+    text-align: center;
+}
+
+
+.lista_expandida {
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+
+.texto_incremento {
+    font-size: 20px;
+}
+
+
+.modo_automatico {
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+
+.botao_submit {
+    font-size: 20px;
+    border-radius: 10px;
+    white-space: pre;
+    background-color: #aa1e1e;
+    color: white;
+}
+
+
+
+
+input[type=range] {
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    height: 15px;
+    width: 265px;
+    border-radius: 100px;
+}

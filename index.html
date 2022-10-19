@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Link CSS e titulo da pagina -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Encrypt e decrypt seu texto aqui!</title>
+</head>
+
+<body>
+
+    <!-- Bloco e titulo do header -->
+    <div class="blo_header">
+        <div class="ele_1">
+            <h1>Encrypt | Decrypt</h1>
+        </div>
+    </div>
+
+    <!-- Bloco do body -->
+    <div class="blo_body">
+        <br>
+
+        <!-- Bloco das informacoes de codificação/encodificação -->
+        <div class="blo_enc_dec">
+
+            <form>
+
+                <!-- Multipla escolha: CODIFICAR ou DECODIFICAR -->
+                <input type="radio" name="multipla_escolha" value="encrypt" checked="checked"><label
+                    style="font-size: 23px;"> codificar</label>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="multipla_escolha" value="decrypt"><label
+                    style="font-size: 23px;"> decodificar</label>
+                <br>
+                <br>
+
+                <!-- Lista expandida: Cifra de Cesar ou Base64 -->
+                <select class="lista_expandida" name="lista_expandida" id="lista_expandida">
+                    <option value="cifra_de_cesar">&nbsp;&nbsp;Cifra de César&nbsp;&nbsp;</option>
+                    <option value="base64">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Base64&nbsp;&nbsp;</option>
+                </select>
+                <br>
+                <br>
+
+                <!-- Incremento Cifra de Cesar: BARRA DESLIZANTE -->
+                <label for="points" class="texto_incremento" id="texto_incremento">INCREMENTO: 1</label>
+                <br>
+                <br>
+                <input type="range" class="barra_deslizante" id="barra_deslizante" name="points" value="1" min="1"
+                    max="25" step="1">
+                <br>
+                <br>
+
+                <!-- Modo MANUAL ou AUTOMÁTICO -->
+                <select class="modo_automatico" name="modo_automatico" id="modo_automatico">
+                    <option value="manual">&nbsp;&nbsp;MODO: manual&nbsp;&nbsp;</option>
+                    <option value="automatico">&nbsp;&nbsp;MODO: automático&nbsp;&nbsp;</option>
+                </select>
+                <br>
+                <br>
+
+                <!-- Formulario de insercao de texto (que será codificado ou decodificado)-->
+                <div class="form-control">
+                    <textarea rows="10" cols="40" name="message" name="formulario_1" class="formulario_1"
+                        id="formulario_1" placeholder=" Texto para encryptar..."></textarea>
+                </div>
+                <br>
+                <button type="button" class="botao_submit" id="botao_submit" name="botao_submit">&nbsp;&nbsp;&nbsp;Codificar Mensagem!&nbsp;&nbsp;&nbsp;</button>
+                <br>
+                <br>
+
+                <!-- Formulario de retorno com a resposta da codificação ou decodificação -->
+                <div class="form-control">
+                    <textarea rows="10" cols="40" name="message" name="formulario_2" id="formulario_2"
+                        placeholder=" Mensagem encryptada..."></textarea>
+                </div>
+                <br>
+
+            </form>
+
+
+
+
+
+        </div>
+    </div>
+
+    <div class="blo_footer">
+        <div class="ele_1">
+            <footer>
+                <h3>© 2022-2022 Encrypt | Decrypt Online Tools</h3>
+            </footer>
+        </div>
+    </div>
+
+
+
+    <!-- Link do script JS -->
+    <script src="./js/code.js"></script>
+</body>
+
+</html>
