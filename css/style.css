@@ -100,8 +100,38 @@ input[type=range] {
 }
 
 
+textarea {
+    width: 500px;
+    height: 120px;
+    border-radius: 10px;
+    white-space: pre;
+}
+
+
+.instrucoes_mobile
+{
+    display: none;
+}
+
+.instrucoes_desktop
+{
+    display: show; 
+}
+
+
 /* RESOLUÇÃO MOBILE */
 @media (max-width: 600px) {
+
+    .instrucoes_mobile
+    {
+        display: block;
+    }
+
+    .instrucoes_desktop
+    {
+        display: none;
+    }
+
 
     /* Ajustes dos formulários */
     textarea {
@@ -113,23 +143,7 @@ input[type=range] {
     }
 
 
-}
-
-
-
-
-
-
-/* RESOLUÇÃO DESKTOP */
-@media (max-width: 2000px) {
-
-    /* Ajustes dos formulários */
-    textarea {
-        width: 500px;
-        height: 120px;
-        border-radius: 10px;
-        white-space: pre;
-    }
-
 
 }
+
+
