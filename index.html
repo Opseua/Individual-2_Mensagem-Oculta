@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,8 +39,8 @@
 
                 <!-- Lista expandida: Cifra de Cesar ou Base64 -->
                 <select class="lista_expandida" name="lista_expandida" id="lista_expandida">
-                    <option value="cifra_de_cesar">&nbsp;&nbsp;Cifra de César&nbsp;&nbsp;</option>
-                    <option value="base64">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Base64&nbsp;&nbsp;</option>
+                    <option value="cifra_de_cesar">&nbsp;&nbsp;cifra de césar&nbsp;&nbsp;</option>
+                    <option value="base64">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;base64&nbsp;&nbsp;</option>
                 </select>
                 <br>
                 <br>
@@ -64,38 +65,62 @@
                 <!-- Formulario de insercao de texto (que será codificado ou decodificado)-->
                 <div class="form-control">
                     <textarea rows="10" cols="40" name="message" name="formulario_1" class="formulario_1"
-                        id="formulario_1" placeholder=" Texto para encryptar..."></textarea>
+                        id="formulario_1" placeholder=" Texto para codificar..."></textarea>
                 </div>
                 <br>
-                <button type="button" class="botao_submit" id="botao_submit" name="botao_submit">&nbsp;&nbsp;&nbsp;Codificar Mensagem!&nbsp;&nbsp;&nbsp;</button>
+                <button type="button" class="botao_submit" id="botao_submit"
+                    name="botao_submit">&nbsp;&nbsp;&nbsp;Codificar Mensagem!&nbsp;&nbsp;&nbsp;</button>
                 <br>
                 <br>
 
                 <!-- Formulario de retorno com a resposta da codificação ou decodificação -->
                 <div class="form-control">
                     <textarea rows="10" cols="40" name="message" name="formulario_2" id="formulario_2"
-                        placeholder=" Mensagem encryptada..."></textarea>
+                        placeholder=" Resultado codificado sairá aqui"></textarea>
+                </div>
+
+                <!-- Instruções para mobile (o elemento será oculto ou exibido de acordo com a resolução da tela no css) -->
+                <div class="instrucoes_mobile" id="instrucoes_mobile">
+                    <h3>✅ Instruções de uso ✅</h3>
+                    <h4>
+                    🟡Selecione o modo<br>
+                    "codificar" ou "decodificar"<br>
+                    🟡Metodo de codificação<br>
+                    "cifra de césar" ou "base64"<br>
+                    🔴Caso seja "cifra de césar"<br>
+                    defina o seu "incremento"<br>
+                    🟡Insira o texto para<br>
+                    codificar ou decodificar<br>
+                    sempre no 1º formulário<br>
+                    🟡Metodo "manual"<br>
+                    codifica e decodifica de uma só vez<br>
+                    🟡Metodo "automático"<br>
+                    codifica e decodifica em tempo real</h4>
+                </div>
+
+                <!-- Instruções para desktop (o elemento será oculto ou exibido de acordo com a resolução da tela no css) -->
+                <div class="instrucoes_desktop" id="instrucoes_desktop">
+                    <h3>✅ Instruções de uso ✅</h3>
+                    <h4>🟡Selecione o modo ➡️ "codificar" ou "decodificar"</h4>
+                    <h4>🟡Metodo de codificação ➡️ "cifra de césar" ou "base64"</h4>
+                    <h4>🔴Caso seja "cifra de césar" defina o seu "incremento"</h4>
+                    <h4>🟡Insira o texto para codificar ou decodificar no 1º formulário</h4>
+                    <h4>🟡Metodo "manual" ➡️ codifica e decodifica de uma só vez</h4>
+                    <h4>🟡Metodo "automático" ➡️ codifica e decodifica em tempo real</h4>
                 </div>
                 <br>
-
             </form>
-
-
-
-
 
         </div>
     </div>
-
+    <!-- Rodapé -->
     <div class="blo_footer">
         <div class="ele_1">
             <footer>
-                <h3>© 2022-2022 Encrypt | Decrypt Online Tools</h3>
+                <h3>© 2022-2022 Encrypt | Decrypt Online Tools</h2>
             </footer>
         </div>
     </div>
-
-
 
     <!-- Link do script JS -->
     <script src="./js/code.js"></script>

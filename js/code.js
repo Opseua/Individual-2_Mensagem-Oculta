@@ -8,15 +8,15 @@ const ele_formulario_2 = document.getElementById("formulario_2");
 const ele_botao = document.getElementById("botao_submit");
 
 
-// Monitor de eventos: acionar quando a MULTIPLA ESCOLHA (Codificar ou Decodificar) for alterada //
+// Monitor de eventos: acionar quando a MULTIPLA ESCOLHA (CODIFICAR ou DECODIFICAR) for alterada //
 document.addEventListener('input', (e) => {
 
   if (e.target.getAttribute('name') == "multipla_escolha")
     if (e.target.value === "encrypt") {
 
       // Alterar texto de fundo dos formulários (quando a opção CODIFICAR estiver marcada) //
-      ele_formulario_1.placeholder = " Texto para encryptar...";
-      ele_formulario_2.placeholder = " Mensagem encryptada...";
+      ele_formulario_1.placeholder = " Texto para codificar...";
+      ele_formulario_2.placeholder = " Resultado codificado sairá aqui";
       ele_botao.textContent = "   Codificar Mensagem!   ";
       ele_botao.style.backgroundColor = "#aa1e1e";
       ele_botao.style.color = "white";
@@ -25,8 +25,8 @@ document.addEventListener('input', (e) => {
     else {
 
       // Alterar texto de fundo dos formulários (quando a opção DECODIFICAR estiver marcada) //
-      ele_formulario_1.placeholder = " Mensagem para decryptar...";
-      ele_formulario_2.placeholder = " Texto decryptado...";
+      ele_formulario_1.placeholder = " Texto para decodificar...";
+      ele_formulario_2.placeholder = " Resultado decodificado sairá aqui";
       ele_botao.textContent = " Decodificar Mensagem! ";
       ele_botao.style.backgroundColor = "#267506";
       ele_botao.style.color = "white";
@@ -34,7 +34,7 @@ document.addEventListener('input', (e) => {
     }
 })
 
-// Monitor de eventos: acionar quando a LISTA EXPANDIDA (Cifra de César ou BASE64) for alterada //
+// Monitor de eventos: acionar quando a LISTA EXPANDIDA (CIFRA DE CÉSAR ou BASE64) for alterada //
 ele_lista_expandida.addEventListener('change', (event) => {
 
   if (ele_lista_expandida.value === 'base64') {
@@ -64,19 +64,19 @@ ele_modo_automatico.addEventListener('change', (event) => {
 
   if (ele_modo_automatico.value === 'manual') {
 
-    // Mostrar o botão para codificar ou decodificar (quando o modo for MANUAL) //
+    // Mostrar o botão para CODIFICAR ou DECODIFICAR (quando for o modo MANUAL) //
     ele_botao.style.visibility = "visible";
 
   } else {
 
-    // Ocultar o botão para codificar ou decodificar (quando o modo for AUTOMÁTICO) //
+    // Ocultar o botão para CODIFICAR ou DECODIFICAR (quando for o modo AUTOMÁTICO) //
     ele_botao.style.visibility = "hidden";
 
   }
 });
 
 
-// Monitor de eventos: acionar quando o botão "codificar" ou "decodificar" for pressionado //
+// Monitor de eventos: acionar quando o botão CODIFICAR ou DECODIFICAR for pressionado //
 document.getElementById("botao_submit").addEventListener("click", function (event) {
   encrypt_decrypt()
 }
@@ -90,14 +90,16 @@ ele_formulario_1.addEventListener('propertychange', checkautomatico);
 function checkautomatico() {
 
   // Executar somente se o modo for AUTOMÁTICO //
-  if (ele_modo_automatico.value === "automatico" && ele_lista_expandida.value === "base64") {
+  if (ele_modo_automatico.value === "automatico") {
     encrypt_decrypt()
   }
 }
 
 
-// Encrypt-Decrypt Base64 e Cifra de César //
+// Encrypt-Decrypt BASE64 e CIFRA DE CÉSAR //
 function encrypt_decrypt() {
+
+  alert(screen.width+1)
 
   const val_multipla_escolha = document.querySelector('input[name="multipla_escolha"]:checked').value;
   const val_lista_expandida = ele_lista_expandida.value;
@@ -116,7 +118,7 @@ function encrypt_decrypt() {
 
     }
 
-    // Modo: Cifra de César //
+    // Modo: CIFRA DE CÉSAR //
     if (val_lista_expandida === "cifra_de_cesar") {
 
       ele_formulario_2.value = (caesar(val_formulario_1, val_barra_deslizante))
@@ -136,7 +138,7 @@ function encrypt_decrypt() {
 
     }
 
-    // Modo: Cifra de César //
+    // Modo: CIFRA DE CÉSAR //
     if (val_lista_expandida === "cifra_de_cesar") {
 
       val_barra_deslizante_novo = Number(val_barra_deslizante)
@@ -151,12 +153,11 @@ function encrypt_decrypt() {
 
 
 
+// ######################################################################################################################## //
 
 
 
-
-
-// Script milagroso do Cifra de César //
+// Script para processar em CIFRA DE CÉSAR (origem: Google) //
 const caesar = function (word, num) {
   let solved = ""
   num = (num % 26 + 26) % 26;
@@ -177,9 +178,7 @@ const caesar = function (word, num) {
 
 
 
-
-
-// Script milagroso do BASE64 //
+// Script para processar em BASE64 (origem: Google) //
 "use strict";
 // Array of bytes to Base64 string decoding
 function b64ToUint6(nChr) {
