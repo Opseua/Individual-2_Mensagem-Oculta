@@ -99,8 +99,6 @@ function checkautomatico() {
 // Encrypt-Decrypt BASE64 e CIFRA DE CÉSAR //
 function encrypt_decrypt() {
 
-  alert(screen.width+1)
-
   const val_multipla_escolha = document.querySelector('input[name="multipla_escolha"]:checked').value;
   const val_lista_expandida = ele_lista_expandida.value;
   const val_barra_deslizante = ele_barra_deslizante.value;

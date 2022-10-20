@@ -113,21 +113,6 @@ input[type=range] {
     }
 
 
-    
-    .instrucoes_desktop {
-        display: none;
-
-    }
-
-
-    .instrucoes_mobile {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-    }
-
-
 }
 
 
@@ -145,12 +130,6 @@ input[type=range] {
         border-radius: 10px;
         white-space: pre;
     }
-
-    
-    .instrucoes_mobile {
-        display: none;
-    }
-
 
 
 }
