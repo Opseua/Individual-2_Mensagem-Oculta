@@ -9,8 +9,8 @@ Link:
 
 ✅ Instruções de uso ✅
 🟡Selecione o modo "codificar" ou "decodificar"<br>
-🟡Método de codificação "cifra de césar" ou "base64"
-🔴Caso seja "cifra de césar" defina o seu "incremento"
-🟡Insira o texto para codificar ou decodificar sempre no 1º formulário
-🟡Método "manual" codifica e decodifica de uma só vez
+🟡Método de codificação "cifra de césar" ou "base64"<br>
+🔴Caso seja "cifra de césar" defina o seu "incremento"<br>
+🟡Insira o texto para codificar ou decodificar sempre no 1º formulário<br>
+🟡Método "manual" codifica e decodifica de uma só vez<br>
 🟡Método "automático" codifica e decodifica em tempo real
