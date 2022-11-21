@@ -1,4 +1,4 @@
-<h1>Projeto Individual Módulo 2: **Mensagem Oculta**</h1>
+<h1>Projeto Individual Módulo 2: <b>Mensagem Oculta</b>
 
 Trabalho em parceria com a Resilia e SENAC
 
