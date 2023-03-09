@@ -5,7 +5,7 @@ Trabalho em parceria com a Resilia e SENAC
 Esse é o meu 3º projeto criado, e o 2º feito de forma individual
 
 
-Link: https://opseua.github.io/Individual-2_Mensagem-Oculta/
+Link: https://opseua.github.io/M2-IND_Mensagem-Oculta/
 
 ✅ Instruções de uso ✅
 
